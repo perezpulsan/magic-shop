@@ -1,25 +1,19 @@
 import React, {Component} from "react";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 import Navbar from "./components/Navbar/Navbar";
+import { Jumbotron, Button  } from 'reactstrap';
+
+
 
 class App extends Component {
-  state = {
-    sideDrawerOpen: false,
-  };
-
-  drawerToggleClickHandler = () => {
-    this.setState(prevState => {
-      return {sideDrawerOpen: !prevState.sideDrawerOpen};
-    });
-  };
-
-  backdropClickHandler = () => {
-    this.state({sideDrawerOpen: false});
-  };
+ 
   render() {
     return (
       <div style={{height: "100%"}}>
         <Navbar />
+        <Jumbotron/>
+        <Button/>
 
         <main style={{marginTop: "70px"}}>
           <p>This is the content of the page</p>
