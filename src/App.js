@@ -4,6 +4,9 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar/Navbar";
 import { Jumbotron, Button  } from 'reactstrap';
 
+import Dvd from "./components/Dvd/Dvd";
+
+
 
 
 class App extends Component {
@@ -14,6 +17,8 @@ class App extends Component {
         <Navbar />
         <Jumbotron/>
         <Button/>
+        <Dvd/>
+        
 
         <main style={{marginTop: "70px"}}>
           <p>This is the content of the page</p>
